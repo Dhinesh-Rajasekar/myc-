@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int amt1,dis1,sh1,amt2,dis2,sh2,amt3,dis3,sh3;
+    cin>>amt1>>dis1>>sh1>>amt2>>dis2>>sh2>>amt3>>dis3>>sh3;
+    
+   int b= ((amt1*dis1)/100);
+   int y1=(amt1-b);
+   int c=y1+sh1; 
+   cout<<"In Flipkart Rs."<<c<<endl;
+   int e=((amt2*dis2)/100);
+   int y2=(amt2-e);
+   int d=y2+sh2;
+   cout<<"In Snapdeal Rs."<<d<<endl;
+   int f=((amt3*dis3)/100);
+   int y3=(amt3-f);
+   int g=y3+sh3;
+   cout<<"In Amazon Rs."<<g<<endl<<"He Will prefer ";
+   if(c<d && c<g)
+   cout<<"Flipkart";
+   if(d<c && d<g)
+   cout<<"Snapdeal";
+   if(g<c && g<d)
+   cout<<"Amazon";
+   //Type your code here
+    return 0;
+}
