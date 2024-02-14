@@ -1,0 +1,17 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    float e;
+    cin>>e;
+    if(e<=200)
+    cout<<"Rs."<<ceil((e*0.5));
+    else if(e<=400)
+    cout<<"Rs."<<ceil(((e*0.65)+100));
+    else if(e<=600)
+    cout<<"Rs."<<ceil(((e*0.80)+200));
+    else
+    cout<<"Rs."<<ceil(((e*1.25)+425));
+    //Type your code her<<e
+}
